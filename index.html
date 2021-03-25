@@ -1,34 +1,82 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
   <title>Logical Task two</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
 </head>
 
 <body>
   <!--container start-->
   <div class="container">
-
+    <div class="wrapper">
+      <form action="#" method="POST">
+        <div class="form-control">
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" id="fname" value="">
+        </div>
+        <div class="form-control">
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" value="">
+        </div>
+        <div class="form-control">
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="male" value="male">Male
+          <input type="radio" name="gender" id="female" value="female">Female
+        </div>
+        <div class="form-control">
+          <label for="address">Address:</label>
+          <textarea name="address" id="address" value=""></textarea>
+        </div>
+        <div class="terms">
+          <input type="checkbox" name="terms" id="terms">Terms and conditions
+        </div>
+        <input type="submit" value="Submit" id="btn1">
+        <input type="submit" value="Cancel" id="btn2">
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbldata">
+          <!-- <tr>
+            <td>Poonam</td>
+            <td>Patil</td>
+            <td>female</td>
+            <td>Mumbai</td>
+            <td><button id="edit">Edit</button></td>
+            <td><button id="edit">Delete</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
 
   </div>
   <!--container end-->
 
-<script src="assets/js/script.js"></script> -->
+  <script src="assets/js/script.js"></script> -->
 </body>
+
 </html>
